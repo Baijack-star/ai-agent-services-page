@@ -7,9 +7,69 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://baijack-star.github.io/ai-agent-services-page/booking.html</loc>
+    <lastmod>2026-02-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://baijack-star.github.io/ai-agent-services-page/demo.html</loc>
     <lastmod>2026-02-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://baijack-star.github.io/ai-agent-services-page/blog/ai-chatbots-in-customer-service.html</loc>
+    <lastmod>2026-02-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://baijack-star.github.io/ai-agent-services-page/blog/ai-for-e-commerce.html</loc>
+    <lastmod>2026-02-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://baijack-star.github.io/ai-agent-services-page/blog/blog1.html</loc>
+    <lastmod>2026-02-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://baijack-star.github.io/ai-agent-services-page/blog/blog2.html</loc>
+    <lastmod>2026-02-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://baijack-star.github.io/ai-agent-services-page/blog/building-ai-voice-agents.html</loc>
+    <lastmod>2026-02-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://baijack-star.github.io/ai-agent-services-page/blog/building-an-ai-powered-customer-service-bot-with-n8n-and-openai.html</loc>
+    <lastmod>2026-02-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://baijack-star.github.io/ai-agent-services-page/blog/business-benefits.html</loc>
+    <lastmod>2026-02-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://baijack-star.github.io/ai-agent-services-page/blog/technical-guide.html</loc>
+    <lastmod>2026-02-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://baijack-star.github.io/ai-agent-services-page/blog/why-small-businesses-should-invest-in-ai-automation-in-2026.html</loc>
+    <lastmod>2026-02-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
