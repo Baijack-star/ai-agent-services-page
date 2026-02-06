@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Customer Service Demo</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .chat-container {
+            width: 90%;
+            max-width: 800px;
+            height: 90vh;
+            max-height: 700px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        .chat-header {
+            background: #6a1b9a;
+            color: #fff;
+            padding: 20px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            text-align: center;
+        }
+        .chat-box {
+            flex-grow: 1;
+            padding: 20px;
+            overflow-y: auto;
+            border-bottom: 1px solid #ddd;
+        }
+        .message {
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+        .message.user {
+            align-items: flex-end;
+        }
+        .message.bot {
+            align-items: flex-start;
+        }
+        .message .text {
+            padding: 10px 15px;
+            border-radius: 20px;
+            max-width: 70%;
+            word-wrap: break-word;
+        }
+        .message.user .text {
+            background: #e0e0e0;
+            color: #333;
+        }
+        .message.bot .text {
+            background: #f1f0f0;
+            color: #333;
+        }
+        .preset-questions {
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .preset-questions button {
+            background: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .preset-questions button:hover {
+            background: #e0e0e0;
+        }
+        .chat-input {
+            display: flex;
+            padding: 20px;
+        }
+        .chat-input input {
+            flex-grow: 1;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            padding: 10px 15px;
+            margin-right: 10px;
+        }
+        .chat-input button {
+            background: #6a1b9a;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .chat-input button:hover {
+            background: #4a148c;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>AI Customer Service Assistant</h2>
+        </div>
+        <div class="chat-box" id="chat-box">
+            <div class="message bot">
+                <div class="text">Hello! I am your AI assistant. How can I help you today?</div>
+            </div>
+        </div>
+        <div class="preset-questions">
+            <button onclick="askQuestion('What are your shipping options?')">Shipping Options</button>
+            <button onclick="askQuestion('How can I track my order?')">Track My Order</button>
+            <button onclick="askQuestion('What is your return policy?')">Return Policy</button>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Type your message here...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script>
+        const chatBox = document.getElementById('chat-box');
+        const userInput = document.getElementById('user-input');
+
+        const responses = {
+            "what are your shipping options?": "We offer standard shipping (3-5 business days), express shipping (1-2 business days), and international shipping (7-14 business days).",
+            "how can i track my order?": "You can track your order by clicking on the tracking link sent to your email address after your purchase. You can also enter your order number on our website's tracking page.",
+            "what is your return policy?": "We offer a 30-day return policy for all items in their original condition. Please visit our returns page to initiate a return.",
+            "default": "I am sorry, I do not have information about that. Please try asking another question or contact our human support team for further assistance."
+        };
+
+        function sendMessage() {
+            const userText = userInput.value.trim();
+            if (userText !== '') {
+                appendMessage('user', userText);
+                userInput.value = '';
+                setTimeout(() => {
+                    generateBotResponse(userText);
+                }, 1000);
+            }
+        }
+
+        function askQuestion(question) {
+            appendMessage('user', question);
+            setTimeout(() => {
+                generateBotResponse(question);
+            }, 1000);
+        }
+
+        function appendMessage(sender, text) {
+            const messageElement = document.createElement('div');
+            messageElement.classList.add('message', sender);
+            const textElement = document.createElement('div');
+            textElement.classList.add('text');
+            textElement.innerText = text;
+            messageElement.appendChild(textElement);
+            chatBox.appendChild(messageElement);
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+
+        function generateBotResponse(userText) {
+            const lowerUserText = userText.toLowerCase();
+            const response = responses[lowerUserText] || responses['default'];
+            appendMessage('bot', response);
+        }
+
+        userInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+    </script>
+
+</body>
+</html>
