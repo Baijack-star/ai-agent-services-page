@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Agent Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-900 to-purple-900 text-center p-8 fade-in">
+        <div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-4">Transform Your Business with AI-Powered Agents</h1>
+            <p class="text-xl md:text-2xl mb-8">We build custom AI solutions that automate your workflows, delight your customers, and drive growth.</p>
+            <a href="#contact" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300">Get a Free Consultation</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-8 fade-in" style="animation-delay: 0.2s;">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12">Our Services</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-gray-800 p-8 rounded-lg transform hover:scale-105 transition duration-300">
+                    <h3 class="text-2xl font-bold mb-4">AI Customer Support Bot</h3>
+                    <p>Reduce response times by 90% with intelligent chatbots.</p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-lg transform hover:scale-105 transition duration-300">
+                    <h3 class="text-2xl font-bold mb-4">AI Voice Agent</h3>
+                    <p>Handle calls autonomously with natural conversation.</p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-lg transform hover:scale-105 transition duration-300">
+                    <h3 class="text-2xl font-bold mb-4">Workflow Automation</h3>
+                    <p>Connect your tools and eliminate manual processes with n8n.</p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-lg transform hover:scale-105 transition duration-300">
+                    <h3 class="text-2xl font-bold mb-4">Automated Reporting</h3>
+                    <p>Get real-time business insights powered by AI.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-20 px-8 bg-gray-800 fade-in" style="animation-delay: 0.4s;">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12">How It Works</h2>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+                <div class="flex items-center">
+                    <div class="bg-purple-600 rounded-full h-16 w-16 flex items-center justify-center text-2xl font-bold">1</div>
+                    <div class="ml-4 text-left">
+                        <h3 class="text-2xl font-bold">Discovery</h3>
+                        <p>We learn about your business and identify automation opportunities.</p>
+                    </div>
+                </div>
+                <div class="text-purple-600 text-2xl mx-8 hidden md:block">&rarr;</div>
+                <div class="flex items-center mt-8 md:mt-0">
+                    <div class="bg-purple-600 rounded-full h-16 w-16 flex items-center justify-center text-2xl font-bold">2</div>
+                    <div class="ml-4 text-left">
+                        <h3 class="text-2xl font-bold">Build</h3>
+                        <p>Our team designs and develops your custom AI solution.</p>
+                    </div>
+                </div>
+                <div class="text-purple-600 text-2xl mx-8 hidden md:block">&rarr;</div>
+                <div class="flex items-center mt-8 md:mt-0">
+                    <div class="bg-purple-600 rounded-full h-16 w-16 flex items-center justify-center text-2xl font-bold">3</div>
+                    <div class="ml-4 text-left">
+                        <h3 class="text-2xl font-bold">Launch</h3>
+                        <p>We deploy, monitor, and optimize for maximum impact.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section id="case-studies" class="py-20 px-8 fade-in" style="animation-delay: 0.6s;">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12">Case Studies</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4">E-commerce AI Chatbot</h3>
+                    <p class="text-purple-400 text-lg">70% reduction in support tickets, 40% cost savings.</p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4">Home Services Voice Agent</h3>
+                    <p class="text-purple-400 text-lg">80% of calls handled autonomously, 40+ hours saved/month.</p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4">Business Intelligence Dashboard</h3>
+                    <p class="text-purple-400 text-lg">Report generation from 2 days to 5 minutes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 px-8 bg-gray-800 fade-in" style="animation-delay: 0.8s;">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12">What Our Clients Say</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-900 p-8 rounded-lg">
+                    <p class="mb-4">"The AI chatbot transformed our customer service. We're saving time and money, and our customers are happier."</p>
+                    <p class="font-bold">- CEO, Tech Innovators</p>
+                </div>
+                <div class="bg-gray-900 p-8 rounded-lg">
+                    <p class="mb-4">"Automating our reporting has been a game-changer. We can now make data-driven decisions in real-time."</p>
+                    <p class="font-bold">- Head of Operations, Global Corp</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-8 fade-in" style="animation-delay: 1s;">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">Let's Build Something Amazing</h2>
+            <p class="text-xl mb-8">Get in touch for a free consultation.</p>
+            <form class="max-w-xl mx-auto">
+                <div class="mb-4">
+                    <input type="text" placeholder="Name" class="w-full p-4 bg-gray-800 rounded-lg border border-gray-700 focus:outline-none focus:border-purple-500">
+                </div>
+                <div class="mb-4">
+                    <input type="email" placeholder="Email" class="w-full p-4 bg-gray-800 rounded-lg border border-gray-700 focus:outline-none focus:border-purple-500">
+                </div>
+                <div class="mb-4">
+                    <input type="text" placeholder="Company" class="w-full p-4 bg-gray-800 rounded-lg border border-gray-700 focus:outline-none focus:border-purple-500">
+                </div>
+                <div class="mb-4">
+                    <textarea placeholder="Message" rows="4" class="w-full p-4 bg-gray-800 rounded-lg border border-gray-700 focus:outline-none focus:border-purple-500"></textarea>
+                </div>
+                <button type="submit" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-8 text-center text-gray-400">
+        <div class="container mx-auto">
+            <p>&copy; 2026 AI Agent Services. All Rights Reserved.</p>
+            <div class="mt-4">
+                <a href="#" class="mx-2 hover:text-white">Twitter</a>
+                <a href="#" class="mx-2 hover:text-white">LinkedIn</a>
+                <a href="#" class="mx-2 hover:text-white">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const sections = document.querySelectorAll('.fade-in');
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+
+</body>
+</html>
