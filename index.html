@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,35 +20,15 @@
     <meta property="og:url" content="https://baijack-star.github.io/ai-agent-services-page/">
     <meta property="og:image" content="https://baijack-star.github.io/ai-agent-services-page/og-image.jpg">
 
-    <!-- Google Analytics Placeholder -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-XXXXXXXXXX');
-    </script>
-
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
+      "@type": "ProfessionalService",
       "name": "AI Agent Services",
-      "image": "https://baijack-star.github.io/ai-agent-services-page/logo.png",
       "url": "https://baijack-star.github.io/ai-agent-services-page/",
-      "telephone": "+1-555-555-5555",
       "email": "jackshao1981@gmail.com",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "123 AI Street",
-        "addressLocality": "San Francisco",
-        "addressRegion": "CA",
-        "postalCode": "94102",
-        "addressCountry": "US"
-      },
-      "description": "We build custom AI solutions that automate your workflows, delight your customers, and drive growth. Explore our AI-powered services, including customer support bots, voice agents, and workflow automation.",
+      "description": "We build custom AI solutions that automate your workflows, delight your customers, and drive growth.",
       "makesOffer": [
         {
           "@type": "Offer",
@@ -104,168 +83,284 @@
             right: 20px;
             z-index: 1000;
         }
-                    .exit-intent-popup {
+        .exit-intent-popup {
             display: none;
         }
         .exit-intent-popup.visible {
             display: flex;
         }
-
+        .form-success {
+            display: none;
+            color: #a78bfa;
+            font-size: 1.25rem;
+            font-weight: bold;
+            padding: 2rem;
+        }
+    </style>
 </head>
 <body class="bg-gray-900 text-white font-sans">
 
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-gray-900 bg-opacity-95 z-50 px-8 py-4 flex justify-between items-center border-b border-gray-800">
+        <a href="/ai-agent-services-page/" class="text-xl font-bold text-purple-400">AI Agent Services</a>
+        <div class="hidden md:flex items-center space-x-6">
+            <a href="/ai-agent-services-page/services.html" class="text-gray-300 hover:text-purple-300 transition duration-300">Services</a>
+            <a href="/ai-agent-services-page/portfolio.html" class="text-gray-300 hover:text-purple-300 transition duration-300">Portfolio</a>
+            <a href="/ai-agent-services-page/pricing/" class="text-gray-300 hover:text-purple-300 transition duration-300">Pricing</a>
+            <a href="/ai-agent-services-page/blog.html" class="text-gray-300 hover:text-purple-300 transition duration-300">Blog</a>
+            <a href="/ai-agent-services-page/faq/" class="text-gray-300 hover:text-purple-300 transition duration-300">FAQ</a>
+            <a href="/ai-agent-services-page/resources/" class="text-gray-300 hover:text-purple-300 transition duration-300">Resources</a>
+            <a href="#contact" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded-full transition duration-300">Get in Touch</a>
+        </div>
+    </nav>
+
     <!-- Hero Section -->
-    <section class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-900 to-purple-900 text-center p-8 fade-in">
-        <div>
-            <h1 class="text-5xl md:text-7xl font-bold mb-4">AI Automation Services for Your Business</h1>
-            <p class="text-xl md:text-2xl mb-8">We build custom AI solutions that automate your workflows, delight your customers, and drive growth.</p>
-            <a href="/ai-agent-services-page/services.html" class="text-white hover:text-purple-300 transition duration-300 mr-4">Services</a>
-                <a href="/ai-agent-services-page/portfolio.html" class="text-white hover:text-purple-300 transition duration-300 mr-4">Portfolio</a>
-                <a href="/ai-agent-services-page/pricing/" class="text-white hover:text-purple-300 transition duration-300 mr-4">Pricing</a>
-                <a href="/ai-agent-services-page/faq/" class="text-white hover:text-purple-300 transition duration-300 mr-4">FAQ</a>
-                <a href="/ai-agent-services-page/blog/" class="text-white hover:text-purple-300 transition duration-300">Blog</a>
-                <a href="/ai-agent-services-page/resources/" class="text-white hover:text-purple-300 transition duration-300 ml-4">Resources</a>
-            <a href="/ai-agent-services-page/booking.html" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-4 px-10 rounded-full text-xl transition duration-300 transform hover:scale-105">Book a Free AI Consultation</a>
-            <a href="/ai-agent-services-page/demo.html" class="bg-gray-700 hover:bg-gray-800 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 ml-4">Try Our AI Demo</a>
-        </div>
-    </section>
-
-    <!-- Resources Promotion Section -->
-    <section id="resources-promo" class="bg-gray-800 py-12 px-8 fade-in" style="animation-delay: 0.1s;">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-4">Explore Our AI Resources</h2>
-            <p class="text-xl mb-8">Download our free guides and reports to stay ahead of the curve.</p>
-            <a href="/ai-agent-services-page/resources/" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-4 px-10 rounded-full text-xl transition duration-300 transform hover:scale-105">Explore Resources</a>
-        </div>
-    </section>
-
-    <!-- CTA Banner Section -->
-    <section id="cta-banner" class="bg-purple-700 py-12 px-8 fade-in" style="animation-delay: 0.1s;">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-4">Ready to Automate Your Business?</h2>
-            <p class="text-xl mb-8">Download our FREE "Small Business AI Automation Playbook" and learn 5 ways to cut costs by 40%.</p>
-            <a href="/ai-agent-services-page/free-guide/" class="bg-white text-purple-700 font-bold py-4 px-10 rounded-full text-xl transition duration-300 transform hover:scale-105">Get Your Free Guide Now</a>
+    <section class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-900 to-purple-900 text-center p-8 pt-24 fade-in">
+        <div class="max-w-4xl">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">AI Automation Services for Your Business</h1>
+            <p class="text-xl md:text-2xl mb-10 text-gray-200">We build custom AI solutions that automate your workflows, delight your customers, and drive growth.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="/ai-agent-services-page/booking.html" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-4 px-10 rounded-full text-xl transition duration-300 transform hover:scale-105">Book a Free Consultation</a>
+                <a href="/ai-agent-services-page/demo.html" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-4 px-10 rounded-full text-xl transition duration-300 transform hover:scale-105">Try Our AI Demo</a>
+            </div>
         </div>
     </section>
 
     <!-- Services Section -->
     <section id="services" class="py-20 px-8 fade-in" style="animation-delay: 0.2s;">
         <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-12">Our Services</h2>
+            <h2 class="text-4xl font-bold mb-4">Our Services</h2>
+            <p class="text-gray-400 mb-12 max-w-2xl mx-auto">We specialize in building AI-powered solutions tailored to your specific business needs. Every project is custom-built from the ground up.</p>
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="bg-gray-800 p-8 rounded-lg transform hover:scale-105 transition duration-300">
+                <div class="bg-gray-800 p-8 rounded-lg transform hover:scale-105 transition duration-300 border border-gray-700 hover:border-purple-500">
+                    <div class="text-4xl mb-4">🤖</div>
                     <h3 class="text-2xl font-bold mb-4">AI Customer Support Bot</h3>
-                    <p>Reduce response times by 90% with intelligent chatbots.</p>
+                    <p class="text-gray-300">Intelligent chatbots that handle customer inquiries 24/7, reducing response times and improving satisfaction.</p>
                 </div>
-                <div class="bg-gray-800 p-8 rounded-lg transform hover:scale-105 transition duration-300">
+                <div class="bg-gray-800 p-8 rounded-lg transform hover:scale-105 transition duration-300 border border-gray-700 hover:border-purple-500">
+                    <div class="text-4xl mb-4">🎙️</div>
                     <h3 class="text-2xl font-bold mb-4">AI Voice Agent</h3>
-                    <p>Handle calls autonomously with natural conversation.</p>
+                    <p class="text-gray-300">Voice-powered AI agents that handle phone calls autonomously with natural, human-like conversation.</p>
                 </div>
-                <div class="bg-gray-800 p-8 rounded-lg transform hover:scale-105 transition duration-300">
+                <div class="bg-gray-800 p-8 rounded-lg transform hover:scale-105 transition duration-300 border border-gray-700 hover:border-purple-500">
+                    <div class="text-4xl mb-4">⚡</div>
                     <h3 class="text-2xl font-bold mb-4">Workflow Automation</h3>
-                    <p>Connect your tools and eliminate manual processes with n8n.</p>
+                    <p class="text-gray-300">Connect your existing tools and eliminate manual processes with intelligent n8n-powered workflows.</p>
                 </div>
-                <div class="bg-gray-800 p-8 rounded-lg transform hover:scale-105 transition duration-300">
+                <div class="bg-gray-800 p-8 rounded-lg transform hover:scale-105 transition duration-300 border border-gray-700 hover:border-purple-500">
+                    <div class="text-4xl mb-4">📊</div>
                     <h3 class="text-2xl font-bold mb-4">Automated Reporting</h3>
-                    <p>Get real-time business insights powered by AI.</p>
+                    <p class="text-gray-300">Get real-time business insights with AI-powered dashboards and automated report generation.</p>
                 </div>
             </div>
         </div>
     </section>
 
-<!-- Testimonials Section -->
-<section id="testimonials" class="py-20 px-8 fade-in" style="animation-delay: 0.5s;">
-    <div class="container mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-12">What Our Clients Say</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-gray-800 p-8 rounded-lg">
-                <p class="mb-4">"The AI appointment bot reduced our no-shows by 35%. Best investment we made this year."</p>
-                <p class="font-bold">- Dr. Sarah Chen, Bright Smile Dental</p>
-            </div>
-            <div class="bg-gray-800 p-8 rounded-lg">
-                <p class="mb-4">"We went from 3 support agents to 1 + AI. Customer satisfaction actually went UP."</p>
-                <p class="font-bold">- Mike Rodriguez, FastShip E-commerce</p>
-            </div>
-            <div class="bg-gray-800 p-8 rounded-lg">
-                <p class="mb-4">"The AI intake system screens clients 24/7. We get 40% more qualified consultations."</p>
-                <p class="font-bold">- Jennifer Walsh, Walsh & Associates Law</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Trusted By Section -->
-<section id="trusted-by" class="py-12 bg-gray-800 fade-in" style="animation-delay: 0.6s;">
-    <div class="container mx-auto text-center">
-        <h3 class="text-2xl font-bold mb-8">Trusted By Industry Leaders</h3>
-        <div class="flex justify-center items-center space-x-8">
-            <!-- Replace with actual client logos -->
-            <span class="text-4xl font-bold">ICON 1</span>
-            <span class="text-4xl font-bold">ICON 2</span>
-            <span class="text-4xl font-bold">ICON 3</span>
-            <span class="text-4xl font-bold">ICON 4</span>
-        </div>
-    </div>
-</section>
-
-<!-- Results Counter Section -->
-<section id="results" class="py-20 px-8 fade-in" style="animation-delay: 0.7s;">
-    <div class="container mx-auto text-center">
-        <div class="grid md:grid-cols-4 gap-8">
-            <div>
-                <p class="text-4xl font-bold text-purple-400">50+</p>
-                <p>Projects Delivered</p>
-            </div>
-            <div>
-                <p class="text-4xl font-bold text-purple-400">40-60%</p>
-                <p>Cost Reduction</p>
-            </div>
-            <div>
-                <p class="text-4xl font-bold text-purple-400">24/7</p>
-                <p>Availability</p>
-            </div>
-            <div>
-                <p class="text-4xl font-bold text-purple-400">98%</p>
-                <p>Client Satisfaction</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Contact Form Section -->
-    <section id="contact" class="py-20 px-8">
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-20 px-8 bg-gray-800 fade-in" style="animation-delay: 0.3s;">
         <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-12">Ready to Start Your AI Journey?</h2>
-            <form action="https://formspree.io/f/jackshao1981@gmail.com" method="POST" class="max-w-xl mx-auto">
+            <h2 class="text-4xl font-bold mb-4">How It Works</h2>
+            <p class="text-gray-400 mb-12 max-w-2xl mx-auto">From initial consultation to deployment, we make the process simple and transparent.</p>
+            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div class="p-8">
+                    <div class="text-5xl font-bold text-purple-400 mb-4">01</div>
+                    <h3 class="text-2xl font-bold mb-4">Discovery Call</h3>
+                    <p class="text-gray-300">We learn about your business, identify pain points, and map out where AI can deliver the most value.</p>
+                </div>
+                <div class="p-8">
+                    <div class="text-5xl font-bold text-purple-400 mb-4">02</div>
+                    <h3 class="text-2xl font-bold mb-4">Build & Iterate</h3>
+                    <p class="text-gray-300">We develop your custom AI solution with regular check-ins, ensuring it meets your exact requirements.</p>
+                </div>
+                <div class="p-8">
+                    <div class="text-5xl font-bold text-purple-400 mb-4">03</div>
+                    <h3 class="text-2xl font-bold mb-4">Launch & Support</h3>
+                    <p class="text-gray-300">We deploy your solution, train your team, and provide ongoing support to ensure long-term success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section (replaces fake testimonials) -->
+    <section id="why-us" class="py-20 px-8 fade-in" style="animation-delay: 0.4s;">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">Why Choose Us</h2>
+            <p class="text-gray-400 mb-12 max-w-2xl mx-auto">We combine deep technical expertise with a genuine commitment to your business success.</p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-8 rounded-lg border border-gray-700">
+                    <div class="text-4xl mb-4">🎯</div>
+                    <h3 class="text-xl font-bold mb-4">100% Custom-Built</h3>
+                    <p class="text-gray-300">No templates, no cookie-cutter solutions. Every AI agent is built specifically for your business processes and goals.</p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-lg border border-gray-700">
+                    <div class="text-4xl mb-4">🔧</div>
+                    <h3 class="text-xl font-bold mb-4">Full-Stack AI Expertise</h3>
+                    <p class="text-gray-300">From LLM integration to voice AI, from n8n workflows to custom APIs — we handle the entire technical stack.</p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-lg border border-gray-700">
+                    <div class="text-4xl mb-4">🤝</div>
+                    <h3 class="text-xl font-bold mb-4">Transparent Pricing</h3>
+                    <p class="text-gray-300">Clear project scoping, fixed-price quotes, and no hidden fees. You know exactly what you're paying for.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner Section -->
+    <section id="cta-banner" class="py-16 px-8 bg-gradient-to-r from-purple-800 to-blue-800 fade-in" style="animation-delay: 0.5s;">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">Ready to Automate Your Business?</h2>
+            <p class="text-xl mb-8 text-gray-200">Download our FREE "Small Business AI Automation Playbook" and learn 5 ways to cut costs by 40%.</p>
+            <a href="/ai-agent-services-page/free-guide/" class="bg-white text-purple-700 font-bold py-4 px-10 rounded-full text-xl transition duration-300 transform hover:scale-105">Get Your Free Guide Now</a>
+        </div>
+    </section>
+
+    <!-- What We Can Build Section (replaces fake stats) -->
+    <section id="capabilities" class="py-20 px-8 fade-in" style="animation-delay: 0.6s;">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">What We Can Build For You</h2>
+            <p class="text-gray-400 mb-12 max-w-2xl mx-auto">Real-world AI solutions across industries.</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                    <p class="text-purple-400 font-bold text-lg mb-2">E-commerce</p>
+                    <p class="text-gray-300 text-sm">AI chatbots for order tracking, returns, and product recommendations</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                    <p class="text-purple-400 font-bold text-lg mb-2">Healthcare</p>
+                    <p class="text-gray-300 text-sm">Appointment scheduling bots, patient intake automation</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                    <p class="text-purple-400 font-bold text-lg mb-2">Real Estate</p>
+                    <p class="text-gray-300 text-sm">Lead qualification agents, property inquiry voice bots</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                    <p class="text-purple-400 font-bold text-lg mb-2">Legal</p>
+                    <p class="text-gray-300 text-sm">Client intake automation, document processing workflows</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-20 px-8 bg-gray-800">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">Ready to Start Your AI Journey?</h2>
+            <p class="text-gray-400 mb-12">Tell us about your project and we'll get back to you within 24 hours.</p>
+            <form id="contact-form" class="max-w-xl mx-auto" action="https://formspree.io/f/jackshao1981@gmail.com" method="POST">
                 <div class="mb-4">
-                    <input type="text" name="name" placeholder="Your Name" class="w-full p-4 bg-gray-800 rounded-lg border border-gray-700 focus:outline-none focus:border-purple-500" required>
+                    <input type="text" name="name" placeholder="Your Name" class="w-full p-4 bg-gray-900 rounded-lg border border-gray-700 focus:outline-none focus:border-purple-500" required>
                 </div>
                 <div class="mb-4">
-                    <input type="email" name="email" placeholder="Your Email" class="w-full p-4 bg-gray-800 rounded-lg border border-gray-700 focus:outline-none focus:border-purple-500" required>
+                    <input type="email" name="email" placeholder="Your Email" class="w-full p-4 bg-gray-900 rounded-lg border border-gray-700 focus:outline-none focus:border-purple-500" required>
                 </div>
                 <div class="mb-4">
-                    <textarea name="message" placeholder="Tell us about your project" rows="4" class="w-full p-4 bg-gray-800 rounded-lg border border-gray-700 focus:outline-none focus:border-purple-500" required></textarea>
+                    <input type="text" name="company" placeholder="Company (optional)" class="w-full p-4 bg-gray-900 rounded-lg border border-gray-700 focus:outline-none focus:border-purple-500">
                 </div>
-                <button type="submit" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-4 px-10 rounded-full text-xl transition duration-300">Send Message</button>
+                <div class="mb-4">
+                    <textarea name="message" placeholder="Tell us about your project — what problem are you trying to solve?" rows="4" class="w-full p-4 bg-gray-900 rounded-lg border border-gray-700 focus:outline-none focus:border-purple-500" required></textarea>
+                </div>
+                <button type="submit" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-4 px-10 rounded-full text-xl transition duration-300 w-full sm:w-auto">Send Message</button>
+                <p class="text-gray-500 text-sm mt-4">Or email us directly at <a href="mailto:jackshao1981@gmail.com" class="text-purple-400 hover:underline">jackshao1981@gmail.com</a></p>
             </form>
+            <div id="form-success" class="form-success">
+                <p>Thank you! We've received your message and will get back to you within 24 hours.</p>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 py-8 px-4 text-center">
-        <p>&copy; 2026 AI Agent Services. All rights reserved.</p>
-        <p>Email: <a href="mailto:jackshao1981@gmail.com" class="text-purple-400 hover:underline">jackshao1981@gmail.com</a></p>
+    <footer class="bg-gray-900 py-12 px-8 border-t border-gray-800">
+        <div class="container mx-auto">
+            <div class="grid md:grid-cols-3 gap-8 text-center md:text-left">
+                <div>
+                    <h3 class="text-xl font-bold text-purple-400 mb-4">AI Agent Services</h3>
+                    <p class="text-gray-400">Custom AI solutions that automate your workflows and drive growth.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <div class="flex flex-col space-y-2">
+                        <a href="/ai-agent-services-page/services.html" class="text-gray-400 hover:text-purple-300 transition">Services</a>
+                        <a href="/ai-agent-services-page/pricing/" class="text-gray-400 hover:text-purple-300 transition">Pricing</a>
+                        <a href="/ai-agent-services-page/blog.html" class="text-gray-400 hover:text-purple-300 transition">Blog</a>
+                        <a href="/ai-agent-services-page/faq/" class="text-gray-400 hover:text-purple-300 transition">FAQ</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact</h3>
+                    <p class="text-gray-400">Email: <a href="mailto:jackshao1981@gmail.com" class="text-purple-400 hover:underline">jackshao1981@gmail.com</a></p>
+                    <div class="mt-4">
+                        <a href="/ai-agent-services-page/booking.html" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-6 rounded-full transition duration-300 inline-block">Book a Call</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-8 pt-8 border-t border-gray-800">
+                <p class="text-gray-500">&copy; 2026 AI Agent Services. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
-    <div id="exit-intent-popup" class="exit-intent-popup fixed inset-0 bg-black bg-opacity-50 items-center justify-center">
-        <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full text-gray-900">
+    <!-- Exit Intent Popup -->
+    <div id="exit-intent-popup" class="exit-intent-popup fixed inset-0 bg-black bg-opacity-50 items-center justify-center z-50">
+        <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full text-gray-900 relative">
+            <button id="close-popup" class="absolute top-3 right-4 text-gray-500 hover:text-gray-800 text-2xl">&times;</button>
             <h2 class="text-2xl font-bold mb-4">Wait! Before You Go...</h2>
             <p class="mb-6">Download our FREE "Small Business AI Automation Playbook" and learn 5 ways to cut costs by 40%.</p>
-            <a href="/ai-agent-services-page/free-guide/" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300">Get Your Free Guide</a>
-            <button id="close-popup" class="absolute top-2 right-2 text-gray-500 hover:text-gray-800">&times;</button>
+            <a href="/ai-agent-services-page/free-guide/" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 inline-block">Get Your Free Guide</a>
         </div>
     </div>
 
     <script src="/ai-agent-services-page/floating-btn.js"></script>
+    <script>
+        // Form submission handling with fallback
+        const form = document.getElementById('contact-form');
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const formData = new FormData(form);
+                
+                // Try Formspree first
+                fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: { 'Accept': 'application/json' }
+                }).then(response => {
+                    if (response.ok) {
+                        form.style.display = 'none';
+                        document.getElementById('form-success').style.display = 'block';
+                    } else {
+                        // Fallback to mailto
+                        const name = formData.get('name');
+                        const email = formData.get('email');
+                        const company = formData.get('company') || 'N/A';
+                        const message = formData.get('message');
+                        const subject = encodeURIComponent('New AI Consultation Request from ' + name);
+                        const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nCompany: ' + company + '\n\nMessage:\n' + message);
+                        window.location.href = 'mailto:jackshao1981@gmail.com?subject=' + subject + '&body=' + body;
+                    }
+                }).catch(() => {
+                    // Fallback to mailto on network error
+                    const name = formData.get('name');
+                    const email = formData.get('email');
+                    const company = formData.get('company') || 'N/A';
+                    const message = formData.get('message');
+                    const subject = encodeURIComponent('New AI Consultation Request from ' + name);
+                    const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nCompany: ' + company + '\n\nMessage:\n' + message);
+                    window.location.href = 'mailto:jackshao1981@gmail.com?subject=' + subject + '&body=' + body;
+                });
+            });
+        }
+
+        // Exit intent popup
+        let popupShown = false;
+        document.addEventListener('mouseout', function(e) {
+            if (e.clientY < 0 && !popupShown) {
+                document.getElementById('exit-intent-popup').classList.add('visible');
+                popupShown = true;
+            }
+        });
+        document.getElementById('close-popup').addEventListener('click', function() {
+            document.getElementById('exit-intent-popup').classList.remove('visible');
+        });
+    </script>
 </body>
 </html>
